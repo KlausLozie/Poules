@@ -1,0 +1,8 @@
+D
+4 spelers
+1 poule(s) van 4
+
+Van Looy,Erwin,D4,Borsbeek,Antwerpen,België
+Van Puyvelde,Didier,D4,Zele,Oost Vlaanderen,België
+Van Looy,Erik,D2,Borsbeek,Antwerpen,België
+Catoor,Jozef,D6,Sporting Hove,Antwerpen,België

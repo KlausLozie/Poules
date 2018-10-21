@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F73E4F94-7338-4F7A-8D92-B092C58DFBEC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Poules25.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Poules25">
+        <MSBuild Projects="Poules25.dproj"/>
+    </Target>
+    <Target Name="Poules25:Clean">
+        <MSBuild Projects="Poules25.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Poules25:Make">
+        <MSBuild Projects="Poules25.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Poules25"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Poules25:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Poules25:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
